@@ -6,6 +6,7 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 :root {
@@ -44,8 +45,8 @@
 @theme inline {
   --color-background: var(--gray1);
   --color-foreground: var(--gray12);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --default-font-family: var(--font-inter);
+  --default-mono-font-family: var(--font-jetbrains-mono);
 }
 
 body {
@@ -60,7 +61,7 @@ main {
   flex-direction: column;
   position: relative;
   min-height: 100vh;
-  padding-top: 100px;
+  padding-top: 8rem;
   margin: 0px auto;
   padding-left: 24px;
   padding-right: 24px;
@@ -70,7 +71,7 @@ main {
 
 @media (max-width: 768px) {
   main {
-    padding-top: 75px;
+    padding-top: 4rem;
   }
 }
 
@@ -82,7 +83,11 @@ h1 {
 
 p {
   font-size: var(--text-base);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 1rem;
+}
+
+img {
   margin-bottom: 1rem;
 }
 
