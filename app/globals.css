@@ -61,7 +61,7 @@ main {
   flex-direction: column;
   position: relative;
   min-height: 100vh;
-  padding-top: 8rem;
+  padding-top: 10rem;
   margin: 0px auto;
   padding-left: 24px;
   padding-right: 24px;
@@ -69,9 +69,14 @@ main {
   max-width: 720px;
 }
 
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--gray5) transparent;
+}
+
 @media (max-width: 768px) {
   main {
-    padding-top: 4rem;
+    padding-top: 6rem;
   }
 }
 
